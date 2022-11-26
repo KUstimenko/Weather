@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-widget</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <div class="widget hidden" id="widget">
+        <header>
+          <span id="city" class="city-name header-item"></span>
+          <time id="time" class="time header-item"></time>
+        </header>
+        <main>
+          <div class="temperature"><span id="temperature"></span>&degC</div>
+          <div id="condition" class="weather-condition">Cloudy</div>
+        </main>
+        <footer>
+          <ul class="condition-details">
+            <li class="detail-item wind-speed">
+              <img src="img/wind.png" alt="wind-speed" /><span
+                id="wind-speed"
+              ></span>
+              km/h
+            </li>
+            <li class="detail-item humidity">
+              <img src="img/humidity.png" alt="humidity" />
+              <span id="humidity"></span>%
+            </li>
+            <li class="detail-item cloud">
+              <img src="img/cloud.png" alt="cloud" /> <span id="cloud"></span> %
+            </li>
+          </ul>
+          <div class="condition-image">
+            <img id="condition-image" />
+          </div>
+        </footer>
+      </div>
+
+      <div class="widget" id="loader">
+        <p>The weather is loading</p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
